@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "exercise:1": "node ./logicExercise/logicExercise1.js"
   },
   "repository": {
     "type": "git",
