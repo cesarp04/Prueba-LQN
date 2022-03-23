@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "exercise:1": "node ./logicExercise/logicExercise1.js"
+    "exercise:1": "node ./logicExercise/logicExercise1.js",
+    "exercise:2": "node ./logicExercise/logicExercise2.js"
   },
   "repository": {
     "type": "git",
