@@ -1,0 +1,25 @@
+{
+  "name": "prueba-lqn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarp04/Prueba-LQN.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "NextJs",
+    "JavaScript",
+    "React"
+  ],
+  "author": "Cesar Puentes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesarp04/Prueba-LQN/issues"
+  },
+  "homepage": "https://github.com/cesarp04/Prueba-LQN#readme"
+}
