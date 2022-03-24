@@ -7,10 +7,6 @@ function CharacterDetail() {
   const router = useRouter()
   const { id } = router.query
 
-  if (!openModal) {
-    router.push('/')
-  }
-
   return (
     <>
       {openModal && (

@@ -10,8 +10,6 @@ const GET_PEOPLE = gql`
         node {
           id
           name
-          height
-          eyeColor
         }
       }
     }

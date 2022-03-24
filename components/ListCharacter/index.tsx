@@ -4,12 +4,13 @@ import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import DetailsIcon from '@mui/icons-material/Details'
 import { Button } from '@mui/material'
-import Link from 'next/link'
+import ModalComponent from '../ModalComponent'
 import { useRouter } from 'next/router'
 
 export default function ListCharacter(node: any) {
+  const [openModal, setOpenModal] = useState(false)
   const router = useRouter()
-  const handleOpen = () => router.push(`/${node.id}`)
+  const handleOpen = () => setOpenModal(true)
 
   return (
     <List
@@ -26,6 +27,13 @@ export default function ListCharacter(node: any) {
           <DetailsIcon />
         </Button>
       </ListItem>
+      {openModal && (
+        <ModalComponent
+          openModal
+          closeModal={setOpenModal}
+          id={node.id}
+        ></ModalComponent>
+      )}
     </List>
   )
 }
