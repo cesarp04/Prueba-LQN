@@ -22,7 +22,7 @@ $ npm run exercise:2
 $ npm run dev
 ```
 
-### Visit website
+## Visit website
 
 **[App Star Wars](https://prueba-lqn-eight.vercel.app/)**
 
