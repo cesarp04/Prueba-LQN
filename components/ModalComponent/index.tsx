@@ -25,18 +25,13 @@ export default function ModalComponent({ openModal, closeModal, id }: any) {
       peopleId,
     },
   })
-  if (id) {
-    console.log(id)
-  }
-
-  console.log(data)
   if (loading)
     return (
       <Modal
         open={openModal}
         onClose={() => closeModal(false)}
-        aria-labelledby='modal-modal-title'
-        aria-describedby='modal-modal-description'
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
         <Box
           sx={{
@@ -51,7 +46,7 @@ export default function ModalComponent({ openModal, closeModal, id }: any) {
             p: 4,
           }}
         >
-          <Typography id='modal-modal-title' variant='h6' component='h2'>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
             Loading...
           </Typography>
         </Box>
@@ -67,8 +62,8 @@ export default function ModalComponent({ openModal, closeModal, id }: any) {
       <Modal
         open={openModal}
         onClose={() => closeModal(false)}
-        aria-labelledby='modal-modal-title'
-        aria-describedby='modal-modal-description'
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
         <Box
           sx={{
@@ -83,10 +78,10 @@ export default function ModalComponent({ openModal, closeModal, id }: any) {
             p: 4,
           }}
         >
-          <Typography id='modal-modal-title' variant='h6' component='h2'>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
             {data.people.name}
           </Typography>
-          <Typography id='modal-modal-description' sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {data.people.height}
           </Typography>
           <Box

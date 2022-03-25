@@ -2,6 +2,7 @@ import { useQuery, gql } from '@apollo/client'
 import { useRouter } from 'next/router'
 import { Container } from '@mui/material'
 import ListCharacter from '../components/ListCharacter'
+import Layout from '../components/Layout'
 
 const GET_PEOPLE = gql`
   query allPeople {
@@ -25,18 +26,20 @@ function HomePage() {
   if (error) return <p>Error :(</p>
 
   return (
-    <Container
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
-      }}
-    >
-      <h1>list</h1>
-      {data.allPeople.edges.map(({ node }: any) => (
-        <ListCharacter key={node.id} {...node} />
-      ))}
-    </Container>
+    <Layout>
+      <Container
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+        }}
+      >
+        <h1>list</h1>
+        {data.allPeople.edges.map(({ node }: any) => (
+          <ListCharacter key={node.id} {...node} />
+        ))}
+      </Container>
+    </Layout>
   )
 }
 

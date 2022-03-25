@@ -1,6 +1,7 @@
 import ModalComponent from '../components/ModalComponent'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import Layout from '../components/Layout'
 
 function CharacterDetail() {
   const [openModal, setOpenModal] = useState(true)
@@ -8,7 +9,7 @@ function CharacterDetail() {
   const { id } = router.query
 
   return (
-    <>
+    <Layout>
       {openModal && (
         <ModalComponent
           openModal
@@ -16,7 +17,7 @@ function CharacterDetail() {
           id={id}
         ></ModalComponent>
       )}
-    </>
+    </Layout>
   )
 }
 
